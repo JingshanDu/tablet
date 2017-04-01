@@ -1,0 +1,10 @@
+﻿[TABLET Settings]
+STATION$HGXnR
+LIST$AutoList.txt
+MAINPREV$D:\Information\main.jpg
+SUBPREV$D:\Information\sub.jpg
+
+[SCM Settings]
+COMa$11
+COMb$10
+DEBUG$0
