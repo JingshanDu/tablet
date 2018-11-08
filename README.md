@@ -7,3 +7,7 @@ After about two years from the start, I no longer had enough time to maintain th
 This project is far from being a complete product, and I am aware that many bad designs are present. However, I feel that one may still find some interesting ideas or inspirations from these codes.
 
 Almost everything written in Visual Basic (.net).
+
+This program was partly described in the following publication:
+
+Jingshan Du, Yanzhi Liu, Shenming Fu, Lan Lin. A Design of a Remote-Control Telescope System for High-School Students. Astronomical Research and Technology (PNAOC), 2013, 10 (2), 194–200. [DOI:10.3969/j.issn.1672-7673.2013.02.014] 
