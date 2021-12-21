@@ -1,0 +1,41 @@
+#Terminal Automation Batch Language Environment for Telescopes
+#Version 1.1
+#Script Mode Demo
+
+
+init  all          #初始化
+
+#定义第一个目标的坐标
+ra    13h 33m 12s
+dec   28d 12m 20s
+goto  coor         #Goto到这个坐标
+
+spre  test         #设置附属相机图像前缀
+mpre  test         #设置主相机图像前缀
+sseq  6            #附属相机图像编号从6开始
+mfil  clear        #主相机滤光片设为空
+sfoc  10
+mfoc  10
+
+sexp  40|2         #拍摄2张图像，每张40s
+
+loop  100          #下面的步骤循环100次：
+mfil  g            #             \
+mexp  40           #             |
+mfil  r            #             |
+mexp  40           #             |
+mfil  i            #             |
+mexp  40           #             |
+mfil  z            #             |
+mexp  40           #             /
+end   loop         #当前循环体的下界
+
+
+#第二个目标：月球
+goto  moon
+spre  moon
+sseq  1
+sexp  0.001|10     #拍摄10张图像，每张0.001s
+
+
+home  all          #归位以结束观测
